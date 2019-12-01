@@ -1,0 +1,80 @@
+<fieldset>
+    <legend><b>REGISTRATION</b></legend>
+	<form>
+		<script type="text/javascript" src="script.js"></script>
+		<br/>
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr align="Center">
+				<h2> Person Profile </h2>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><input type="text" id="name" name="name" value="" onkeyup="f2()" /></td>
+				<td><input type="button" name="click" value="verify" onclick="f1()" />
+				<div id="msg"></div></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td>
+					<input name="email" id="email" type="text" value="" onkeyup"f4()" />
+					<abbr title="hint: sample@example.com"><b>i</b></abbr>
+				</td>
+				<td><input type="button" name="click" value="verify" onclick="f3()" />
+				<div id="msg"></div></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>User Name</td>
+				<td>:</td>
+				<td><input name="userName" type="text"></td>
+				<td></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td><input name="password" type="password"></td>
+				<td></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td>:</td>
+				<td><input name="confirmPassword" type="password"></td>
+				<td></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td colspan="3">
+					<fieldset>
+						<legend>Gender</legend>    
+						<input name="gender" type="radio" id="gender" >Male
+						<input name="gender" type="radio" id="gender" >Female
+						<input name="gender" type="radio" id="gender" >Other
+					</fieldset>
+				</td>
+				<td><input type="button" name="click" value="verify" onclick="f5()" />
+				<div id="msg"></div></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+			<tr>
+				<td colspan="3">
+					<fieldset>
+						<legend>Date of Birth</legend>    
+						<input type="text" size="2" />/
+						<input type="text" size="2" />/
+						<input type="text" size="4" />
+						<font size="2"><i>(dd/mm/yyyy)</i></font>
+					</fieldset>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		<hr/>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+</fieldset>
